@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDMCET QUERY</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SDMCET QUERY</h1>
+        <nav>
+            <ul>
+                <li><a class="header-item" href="#home">Home</a></li>
+                <li><a class="header-item" href="#about">About Us</a></li>
+                <li><a class="header-item" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+      
+    </header>
+    <main>
+        <section class="question-section">
+            <h2>Ask a Question</h2>
+            <textarea id="question" placeholder="Ask your question here"></textarea>
+            <button id="ask-button">Ask</button>
+        </section>
+        <section class="question-list">
+            <h2>Recent Questions</h2>
+            <ul id="question-list">
+                <!-- Questions and answers will be dynamically added here -->
+                <li>
+                    <h3>Question Title</h3>
+                    <p>Question content goes here...</p>
+                    <button class="answer-button">Answer</button>
+                </li>
+                <!-- Repeat for more questions -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 SDMCET </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
