@@ -1,0 +1,9 @@
+<!ELEMENT queries (query+)>
+<!ELEMENT query (description,author,date,tags,answers)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT tags (tag+)>
+<!ELEMENT tag (#PCDATA)>
+<!ELEMENT answers (answer+)>
+<!ELEMENT answer (description,author,date)>
