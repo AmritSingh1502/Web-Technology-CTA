@@ -1,0 +1,49 @@
+<queries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="queries.xsd">
+    <query>
+        <description> Question or Problem goes here </description>
+        <author>Person who posted the query</author>
+        <date> Posted On </date>
+        <tags>
+            <tag>Related Keyword</tag>
+            <tag>Related Keyword</tag>
+            <tag>Related Keyword</tag>
+            <tag>Related Keyword</tag>
+        </tags>
+        <answers>
+            <answer>
+                <description>Solution Submitted</description>
+                <author>Posted by</author>
+                <date>Posted on </date>
+            </answer>
+            <answer>
+                <description>Solution Submitted</description>
+                <author>Posted by</author>
+                <date>posted on </date>
+            </answer>
+        </answers>
+    </query>
+    <query>
+        <description> Question or Problem goes here </description>
+        <author>Person who posted the query</author>
+        <date> Posted On </date>
+        <tags>
+            <tag>Related Keyword</tag>
+            <tag>Related Keyword</tag>
+            <tag>Related Keyword</tag>
+            <tag>Related Keyword</tag>
+        </tags>
+        <answers>
+            <answer>
+                <description>SOluton Submitted</description>
+                <author>POsted by</author>
+                <date>posted on </date>
+            </answer>
+            <answer>
+                <description>SOluton Submitted</description>
+                <author>POsted by</author>
+                <date>posted on </date>
+            </answer>
+        </answers>
+    </query>
+</queries>
