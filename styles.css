@@ -101,3 +101,11 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-container section {
+    width: 45%; /* Adjust as needed */
+}
