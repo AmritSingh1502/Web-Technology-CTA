@@ -11,7 +11,9 @@ header {
     align-items: center;
     background-color: #10377A;
     color: #fff;
-    padding: 10px;
+    padding: 5px;
+        position: sticky;
+        top: 0;
 }
 
 h1 {
@@ -96,8 +98,8 @@ footer {
     background-color: #10377A;
     color: #9FAFCE;
     text-align: center;
-    padding: 10px 0;
-    position: absolute;
+    padding: 10px 0px;
+        position: sticky;
     bottom: 0;
     width: 100%;
 }
