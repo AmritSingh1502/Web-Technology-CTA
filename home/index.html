@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDMCET QUERY</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>SDMCET QUERY</h1>
+        <nav>
+            <ul>
+                <li><a class="header-item" href="./index.html">Home</a></li>
+                <li><a class="header-item" href="../about/aboutUs.html">About Us</a></li>
+                <li><a class="header-item" href="../contact/contactUs.html">Contact</a></li>
+                <li><a class="header-item" id="login-button" style="cursor: pointer;">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="question-section">
+            <h2>Ask a Question</h2>
+            <textarea id="question" placeholder="Ask your question here"></textarea>
+            <button id="ask-button">Ask</button>
+        </section>
+        <section class="question-list">
+            <h2>Recent Questions</h2>
+            <ul id="question-list">
+                <!-- Questions and answers will be dynamically added here -->
+                <li>
+                    <h3>Question Title</h3>
+                    <p>Question content goes here...</p>
+                    <button class="answer-button">Answer</button>
+                </li>
+                <!-- Repeat for more questions -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 SDMCET </p>
+    </footer>
+    <div class="overlay">
+        <div class="login-modal" id="login-modal">
+            <span id="close-button">
+                X
+            </span>
+
+            <div id="form-container">
+                <form>
+
+                    <div class="login-container">
+
+                        <label for="userid"> User ID </label>
+                        <input type="text" name="userid">
+
+                        <label for="password"> Password </label>
+                        <input type="password" name="password">
+
+                        <div onclick="forget()">
+                            <p style="font-size: x-small;"><u> Forgot Password?</u></p>
+                        </div>
+
+                        <button type="submit">
+                            Log In
+                        </button>
+                    </div>
+            </div>
+            <div style="display: flex; flex-direction: row; margin-top: 5px;;">
+                <hr style="height: 1px; width: 80px; color: #000; background: #000; "> OR
+                <hr style="height: 1px; width: 80px; color: #000; background: #000;">
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <p style="font-size: 12px;"> Don't have a account yet?</p>
+
+                <button style="background-color: #FFB07F; margin-bottom: 5px;">Sign Up</button>
+
+            </div>
+
+        </div>
+
+        </form>
+    </div>
+    </div>
+    <script src="../app.js"></script>
+</body>
+
+</html>
