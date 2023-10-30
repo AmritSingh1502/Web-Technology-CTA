@@ -13,10 +13,10 @@
         <h1>About SDMCET QUERY</h1>
         <nav>
             <ul>
-                <li><a class="header-item" href="../home/index.html">Home</a></li>
-                <li><a class="header-item" href="../about/aboutUs.html">About Us</a></li>
-                <li><a class="header-item" href="../contact/contactUs.html">Contact</a></li>
-                <li><a class="header-item" id="login-button" style="cursor: pointer;">Login</a></li>
+                <li><a class="header-item" href="../index.html">Home</a></li>
+                <li><a class="header-item" href="../about/aboutUs.php">About Us</a></li>
+                <li><a class="header-item" href="../contact/contactUs.php">Contact Us</a></li>
+
             </ul>
         </nav>
     </header>
