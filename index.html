@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDMCET QUERY</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>SDMCET QUERY</h1>
+        <nav>
+            <ul id="menu-list">
+                <li><a class="header-item" href="./index.php">Home</a></li>
+                <li><a class="header-item" href="../about/aboutUs.php">About Us</a></li>
+                <li><a class="header-item" href="../contact/contactUs.php">Contact</a></li>
+                <li id="login-button"><a class="header-item">Login</a></li>
+                <li id='logout-button'><a class='header-item'> LogOut</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div id="not-logged-in">
+
+            <h2>
+
+                Login to Post Questions...
+
+            </h2>
+
+        </div>
+
+        <div id="logged-in">
+            <section class="question-section">
+                <h2>Ask a Question</h2>
+                <form id="post-question" action="post">
+                    <textarea id="question-title" placeholder="Question Title..." name="title" rows="2"
+                        required></textarea>
+                    <span id="question-error"> </span>
+                    <textarea id="question-description" placeholder="Describe your question here" name="description"
+                        rows="5"></textarea>
+                    <button id="ask-button">Ask</button>
+                </form>
+            </section>
+            <section class="question-list">
+                <h2>Recent Questions</h2>
+                <ul id="recent-question-list">
+
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 SDMCET </p>
+    </footer>
+    <div class="overlay">
+        <div class="modal" id="login-modal">
+            <span id="login-close-button" class="close-button">
+                X
+            </span>
+
+            <div class="form-container">
+                <form id="login-form" method="post">
+                    <div class="login-container">
+
+                        <label for="login-username"> User ID </label>
+                        <input type="text" name="login-username" id="login-username" required>
+
+                        <label for="login-password"> Password </label>
+                        <input type="password" name="login-password" id="login-password" required>
+
+                        <button type="submit">
+                            Log In
+                        </button>
+
+                    </div>
+                </form>
+            </div>
+            <div style="display: flex; flex-direction: row; margin-top: 5px;;">
+                <hr style="height: 1px; width: 80px; color: #000; background: #000; "> OR
+                <hr style="height: 1px; width: 80px; color: #000; background: #000;">
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <p style="font-size: 12px;"> Don't have a account yet?</p>
+                <button id="signup-modal-button" style="background-color: #FFB07F; margin-bottom: 5px;">Sign Up</button>
+            </div>
+        </div>
+
+
+
+        <div class="modal" id="signup-modal">
+            <span id="signup-close-button" class="close-button">
+                X
+            </span>
+
+            <div class="form-container">
+                <form id="signup-form" method="post">
+                    <div class="login-container">
+
+                        <label for="signup-username"> UserName</label>
+                        <input id="signup-username" name="signup-username" type="text" required>
+
+                        <label for="signup-password"> Password </label>
+                        <input name="signup-password" type="password" id="signup-password" required>
+
+                        <label for="confirm-password">Confirm Password </label>
+                        <input id="confirm-password" name="confirm-password" type="password" required>
+
+                        <button type="submit">
+                            Sign Up
+                        </button>
+                    </div>
+                </form>
+
+
+            </div>
+            <div style="display: flex; flex-direction: row; margin-top: 5px;;">
+                <hr style="height: 1px; width: 80px; color: #000; background: #000; "> OR
+                <hr style="height: 1px; width: 80px; color: #000; background: #000;">
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <p style="font-size: 12px;"> Already have an account?</p>
+                <button id="login-modal-button" style="background-color: #FFB07F; margin-bottom: 5px;">Log In</button>
+            </div>
+        </div>
+    </div>
+    <script src="../app.js"></script>
+
+</body>
+
+</html>
